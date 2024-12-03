@@ -2,7 +2,10 @@
 
 !Plantilla de aplicacion de mensajería desarrollada React + Vite)! Esta es una aplicación moderna y eficiente para enviar y recibir mensajes en tiempo real. Este proyecto fue desarrollado para demostrar cómo usar **React** junto con el potente **Vite** para crear aplicaciones web rápidas y fáciles de mantener.
 
-![Chat App](https://via.placeholder.com/1500x500.png?text=Chat+App+Screenshot)
+<div align="center">
+  
+<img width="180" height="180" src="https://img.icons8.com/fluency/100/chat--v3.png" alt="chat--v3"/>
+</div>
 
 ## 🚀 **Características**
 
