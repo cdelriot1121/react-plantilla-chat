@@ -3,9 +3,9 @@ import ChatItem from './ChatItem';
 
 const ChatList = () => {
   const chats = [
-    { id: 1, name: 'Juan Pérez', lastMessage: 'Hola que tal' },
-    { id: 2, name: 'María García', lastMessage: 'Muy Bien' },
-    { id: 3, name: 'Carlos López', lastMessage: 'Gracias por la ayuda' },
+    { id: 1, name: 'Persona 1', lastMessage: 'Hola que tal' },
+    { id: 2, name: 'Persona 2', lastMessage: 'Muy Bien' },
+    { id: 3, name: 'Persona 3', lastMessage: 'Gracias por la ayuda' },
   ];
 
   return (
