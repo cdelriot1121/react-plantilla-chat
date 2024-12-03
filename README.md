@@ -19,7 +19,7 @@
 
 - **React**: Librería de JavaScript para crear interfaces de usuario.
 - **Vite**: Herramienta de construccion moderna para React.
-- **Tailwind CSS**: Framework de diseño CSS para crear interfaces rapidas y personalizadas (Aun no incluido).
+- **Tailwind CSS**: Framework de diseño CSS para crear interfaces rapidas y personalizadas (Integrado y en practica).
 
 ## 🔧 **Instalacion**
 

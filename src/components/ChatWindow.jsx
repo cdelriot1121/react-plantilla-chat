@@ -3,15 +3,15 @@ import MessageInput from './MessageInput';
 
 const ChatWindow = () => {
   const messages = [
-    { id: 1, sender: 'Juan', content: 'Hola, ¿cómo estás?' },
+    { id: 1, sender: 'Persona', content: 'Hola, ¿cómo estás?' },
     { id: 2, sender: 'Tú', content: 'Bien, gracias. ¿Y tú?' },
-    { id: 3, sender: 'Juan', content: 'Todo bien, gracias por preguntar.' },
+    { id: 3, sender: 'Persona', content: 'Todo bien, gracias por preguntar.' },
   ];
 
   return (
     <div className="flex-1 flex flex-col">
       <div className="p-4 border-b border-gray-300">
-        <h2 className="text-xl font-semibold">Chat con Juan Pérez</h2>
+        <h2 className="text-xl font-semibold">Chat con Persona x</h2>
       </div>
       <div className="flex-1 overflow-y-auto p-4">
         {messages.map((message) => (
