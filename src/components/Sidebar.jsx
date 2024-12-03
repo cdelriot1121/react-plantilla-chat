@@ -1,13 +1,15 @@
-import React from 'react'
-import ChatList from './ChatList'
+import React from 'react';
+import ChatList from './ChatList';
 
-function Sidebar({ isOpen, setActiveChat }) {
+const Sidebar = () => {
   return (
-    <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
-      <h2>Chats</h2>
-      <ChatList setActiveChat={setActiveChat} />
+    <div className="w-1/4 bg-white border-r border-gray-300">
+      <div className="p-4 border-b border-gray-300">
+        <h2 className="text-xl font-semibold">Chats</h2>
+      </div>
+      <ChatList />
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

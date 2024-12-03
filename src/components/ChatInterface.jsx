@@ -1,22 +1,14 @@
-import React, { useState } from 'react'
-import Sidebar from './Sidebar'
-import ChatWindow from './ChatWindow'
-import '../ChatInterface.css'
+import React from 'react';
+import Sidebar from './Sidebar';
+import ChatWindow from './ChatWindow';
 
-function ChatInterface() {
-  const [activeChat, setActiveChat] = useState(null)
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true)
-
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen)
-  }
-
+const ChatInterface = () => {
   return (
-    <div className={`chat-interface ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
-      <Sidebar isOpen={isSidebarOpen} setActiveChat={setActiveChat} />
-      <ChatWindow activeChat={activeChat} toggleSidebar={toggleSidebar} />
+    <div className="flex h-screen bg-gray-100">
+      <Sidebar />
+      <ChatWindow />
     </div>
-  )
-}
+  );
+};
 
-export default ChatInterface
+export default ChatInterface;

@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-function ChatItem({ chat, setActiveChat }) {
+const ChatItem = ({ name, lastMessage }) => {
   return (
-    <li className="chat-item" onClick={() => setActiveChat(chat)}>
-      {chat.name}
-    </li>
-  )
-}
+    <div className="p-4 border-b border-gray-300 hover:bg-gray-100 cursor-pointer">
+      <h3 className="text-lg font-semibold">{name}</h3>
+      <p className="text-sm text-gray-600">{lastMessage}</p>
+    </div>
+  );
+};
 
-export default ChatItem
+export default ChatItem;

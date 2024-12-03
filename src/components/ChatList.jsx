@@ -1,22 +1,20 @@
-import React from 'react'
+import React from 'react';
+import ChatItem from './ChatItem';
 
-const chats = [
-  { id: 1, name: 'Persona1', avatar: 'https://via.placeholder.com/40' },
-  { id: 2, name: 'Persona2', avatar: 'https://via.placeholder.com/40' },
-  { id: 3, name: 'Persona3', avatar: 'https://via.placeholder.com/40' },
-]
+const ChatList = () => {
+  const chats = [
+    { id: 1, name: 'Juan Pérez', lastMessage: 'Hola que tal' },
+    { id: 2, name: 'María García', lastMessage: 'Muy Bien' },
+    { id: 3, name: 'Carlos López', lastMessage: 'Gracias por la ayuda' },
+  ];
 
-function ChatList({ setActiveChat }) {
   return (
-    <ul className="chat-list">
+    <div className="overflow-y-auto h-full">
       {chats.map((chat) => (
-        <li key={chat.id} className="chat-item" onClick={() => setActiveChat(chat)}>
-          <img width="35" height="35" src="https://img.icons8.com/fluency-systems-regular/50/user-male-circle--v2.png" alt="user-male-circle--v2"/>
-          <span className="chat-name">{chat.name}</span>
-        </li>
+        <ChatItem key={chat.id} name={chat.name} lastMessage={chat.lastMessage} />
       ))}
-    </ul>
-  )
-}
+    </div>
+  );
+};
 
-export default ChatList
+export default ChatList;
